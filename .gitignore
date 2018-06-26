@@ -1,6 +1,0 @@
-Debug/
-Release/
-obj/
-.idea/
-WeatherStation.Api/WeatherStation.Api.Data/Migrations
-*.db
