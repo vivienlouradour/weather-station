@@ -49,6 +49,7 @@ namespace WeatherStation.Api.Core.Controllers
             {
                 try
                 {
+                    
                     dal.AddRecord(dateTime, temperature, humidity, broadcasterName);
                     return new JsonResult(new JsonApiResult("record added"));
                 }
