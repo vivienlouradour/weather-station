@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.Rider2017.3/system/resharper-host/local/Transient/ReSharperHost/v11/SolutionCaches/_WeatherStation.Api.-1811088072.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="WeatherStation.Api.Core" t="IncludeRecursive">
+        <e p="Controllers" t="Include">
+          <e p="RecordController.cs" t="Include" />
+          <e p="ValuesController.cs" t="Include" />
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Startup.cs" t="Include" />
+        <e p="WeatherStation.Api.Core.csproj" t="IncludeRecursive" />
+        <e p="WheatherStationRecords.db" t="Include" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.0" t="Include">
+              <e p="WeatherStation.Api.Core.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="wwwroot" t="Include" />
+      </e>
+      <e p="WeatherStation.Api.Data" t="IncludeRecursive">
+        <e p="Migrations" t="Include">
+          <e p="20180626173911_InitialCreate.Designer.cs" t="Include" />
+          <e p="20180626173911_InitialCreate.cs" t="Include" />
+          <e p="20180626182507_DeleteRecordsFieldInBroadcaster.Designer.cs" t="Include" />
+          <e p="20180626182507_DeleteRecordsFieldInBroadcaster.cs" t="Include" />
+          <e p="WeatherStationContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="WeatherStation.Api.Data.csproj" t="IncludeRecursive" />
+        <e p="WheatherStationRecords.db" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="contract" t="Include">
+          <e p="IDal.cs" t="Include" />
+        </e>
+        <e p="implementation" t="Include">
+          <e p="WeatherStationContext.cs" t="Include" />
+          <e p="WeatherStationDal.cs" t="Include" />
+        </e>
+        <e p="model" t="Include">
+          <e p="Broadcaster.cs" t="Include" />
+          <e p="Record.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.0" t="Include">
+              <e p="WeatherStation.Api.Data.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="WeatherStation.Api.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

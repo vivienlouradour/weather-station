@@ -1,0 +1,3 @@
+WeatherStation.Api/WeatherStation.Api.Core/bin/
+WeatherStation.Api/WeatherStation.Api.Data/Migrations
+*.db

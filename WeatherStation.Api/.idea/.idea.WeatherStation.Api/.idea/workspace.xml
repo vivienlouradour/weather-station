@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="26769a61-897e-43f8-8eb8-fcad73e20b4e" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="IDal.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/contract/IDal.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+              <folding>
+                <marker date="1530038233972" expanded="true" signature="6:84" ph="..." />
+                <marker date="1530038233972" expanded="true" signature="128:543" ph="{...}" />
+                <marker date="1530038233972" expanded="true" signature="135:209" ph="/// Contract of the Data Access Layer ... " />
+                <marker date="1530038233972" expanded="true" signature="249:541" ph="{...}" />
+                <marker date="1530038233972" expanded="true" signature="264:301" ph="/* Add section ... */" />
+                <marker date="1530038233972" expanded="true" signature="420:457" ph="/* Get section ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WeatherStationDal.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/implementation/WeatherStationDal.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="458">
+              <caret line="60" column="88" lean-forward="false" selection-start-line="60" selection-start-column="88" selection-end-line="60" selection-end-column="88" />
+              <folding>
+                <marker date="1530038339154" expanded="true" signature="6:143" ph="..." />
+                <marker date="1530038339154" expanded="true" signature="193:1756" ph="{...}" />
+                <marker date="1530038339154" expanded="true" signature="200:299" ph="/// Implementation of IDal with SQLite and EntityFrameworkCore ... " />
+                <marker date="1530038339154" expanded="true" signature="341:1754" ph="{...}" />
+                <marker date="1530038339154" expanded="true" signature="356:415" ph="/// EF context ... " />
+                <marker date="1530038339154" expanded="true" signature="507:579" ph="{...}" />
+                <marker date="1530038339154" expanded="true" signature="618:670" ph="{...}" />
+                <marker date="1530038339154" expanded="true" signature="778:1481" ph="{...}" />
+                <marker date="1530038339154" expanded="true" signature="939:1150" ph="{...}" />
+                <marker date="1530038339154" expanded="true" signature="1018:1079" ph="{...}" />
+                <marker date="1530038339154" expanded="true" signature="1205:1379" ph="{...}" />
+                <marker date="1530038339154" expanded="true" signature="1534:1600" ph="{...}" />
+                <marker date="1530038339154" expanded="true" signature="1639:1748" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ValuesController.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Core/Controllers/ValuesController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+              <folding>
+                <marker date="1530037950049" expanded="true" signature="6:128" ph="..." />
+                <marker date="1530037950049" expanded="true" signature="175:935" ph="{...}" />
+                <marker date="1530037950049" expanded="true" signature="256:933" ph="{...}" />
+                <marker date="1530037950049" expanded="true" signature="347:421" ph="{...}" />
+                <marker date="1530037950049" expanded="true" signature="514:562" ph="{...}" />
+                <marker date="1530037950049" expanded="true" signature="659:679" ph="{...}" />
+                <marker date="1530037950049" expanded="true" signature="791:811" ph="{...}" />
+                <marker date="1530037950049" expanded="true" signature="907:927" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecordController.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Core/Controllers/RecordController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+              <folding>
+                <marker date="1530038837149" expanded="false" signature="6:181" ph="..." />
+                <marker date="1530038837149" expanded="true" signature="228:840" ph="{...}" />
+                <marker date="1530038837149" expanded="true" signature="311:838" ph="{...}" />
+                <marker date="1530038837149" expanded="true" signature="387:620" ph="{...}" />
+                <marker date="1530038837149" expanded="true" signature="492:566" ph="{...}" />
+                <marker date="1530038837149" expanded="true" signature="721:813" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Broadcaster.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/model/Broadcaster.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+              <folding>
+                <marker date="1530037455290" expanded="true" signature="74:196" ph="{...}" />
+                <marker date="1530037455290" expanded="true" signature="105:194" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ControllerActionInvoker.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/882C7DDC-3607-4EF5-A584-61262F32B442/ea/195f665a/ControllerActionInvoker.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="295" column="8" lean-forward="false" selection-start-line="295" selection-start-column="8" selection-end-line="295" selection-end-column="8" />
+              <folding>
+                <marker date="1530036354654" expanded="true" signature="0:415" ph="/* Decompiled with JetBrains decompiler ... */" />
+                <marker date="1530036354654" expanded="false" signature="423:787" ph="..." />
+                <marker date="1530036354654" expanded="true" signature="832:16820" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="907:16818" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="1531:1723" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="1773:1851" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="1789:1845" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="1899:2092" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="2236:8542" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="2262:8536" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="2743:2854" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="3157:3575" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="3621:4033" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="4613:4728" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="4971:5359" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="5241:5346" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="5990:6446" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="6265:6370" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="6461:6795" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="6594:6716" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="7466:7576" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="7752:8138" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="7999:8054" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="8596:9463" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="8674:9088" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="9115:9457" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="9369:9448" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="9547:10110" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="10160:14132" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="10543:11099" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="11109:13940" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="11419:11551" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="11597:11742" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="11803:12120" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="12194:12778" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="12468:12768" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="12820:13175" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="13076:13131" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="13235:13391" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="13404:13784" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="13671:13740" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="13954:14126" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="14210:14389" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="14395:14578" ph="/// &lt;remarks&gt;&lt;see cref=&quot;M:Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync&quot; /&gt; for deta ... " />
+                <marker date="1530036354654" expanded="true" signature="14637:15068" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="15132:15381" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="15420:15772" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="15907:16549" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="16189:16520" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="16573:16614" ph="{...}" />
+                <marker date="1530036354654" expanded="true" signature="16638:16814" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExecutionContextSwitcher.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0E1B27A4-6035-47D9-A041-CEF439F84C41/8c/7276915c/ExecutionContextSwitcher.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="6" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AsyncTaskMethodBuilder.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0E1B27A4-6035-47D9-A041-CEF439F84C41/55/6745464a/AsyncTaskMethodBuilder.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="59" column="8" lean-forward="false" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Record.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/model/Record.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+              <folding>
+                <marker date="1530033544648" expanded="true" signature="54:369" ph="{...}" />
+                <marker date="1530033544648" expanded="true" signature="80:367" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WeatherStationContext.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/implementation/WeatherStationContext.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+              <folding>
+                <marker date="1530034714311" expanded="false" signature="6:87" ph="..." />
+                <marker date="1530034714311" expanded="true" signature="137:511" ph="{...}" />
+                <marker date="1530034714311" expanded="true" signature="190:509" ph="{...}" />
+                <marker date="1530034714311" expanded="true" signature="395:494" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/882C7DDC-3607-4EF5-A584-61262F32B442/ea/195f665a/ControllerActionInvoker.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/WeatherStation.Api.Data/implementation/WeatherStationContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WeatherStation.Api.Core/Controllers/ValuesController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WeatherStation.Api.Data/model/Broadcaster.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0E1B27A4-6035-47D9-A041-CEF439F84C41/8c/7276915c/ExecutionContextSwitcher.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/WeatherStation.Api.Data/model/Record.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WeatherStation.Api.Data/contract/IDal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WeatherStation.Api.Core/Controllers/RecordController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0E1B27A4-6035-47D9-A041-CEF439F84C41/55/6745464a/AsyncTaskMethodBuilder.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/WeatherStation.Api.Data/implementation/WeatherStationDal.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/WeatherStation.Api.Data/Class1.cs" />
+        <option value="$PROJECT_DIR$/WeatherStation.Api.Data/WeatherStation.Api.Data.csproj" />
+        <option value="$PROJECT_DIR$/WeatherStation.Api.Data/model/Record.cs" />
+        <option value="$PROJECT_DIR$/WeatherStation.Api.Data/appsettings.json" />
+        <option value="$PROJECT_DIR$/WeatherStation.Api.Core/appsettings.json" />
+        <option value="$PROJECT_DIR$/WeatherStation.Api.Data/WeatherStationContext.cs" />
+        <option value="$PROJECT_DIR$/WeatherStation.Api.Data/implementation/WeatherStationContext.cs" />
+        <option value="$PROJECT_DIR$/WeatherStation.Api.Core/Controllers/MeteoController.cs" />
+        <option value="$PROJECT_DIR$/WeatherStation.Api.Core/Controllers/WeatherController.cs" />
+        <option value="$PROJECT_DIR$/WeatherStation.Api.Data/model/Broadcaster.cs" />
+        <option value="$PROJECT_DIR$/WeatherStation.Api.Core/Controllers/WeatherStationController.cs" />
+        <option value="$PROJECT_DIR$/WeatherStation.Api.Core/Controllers/ValuesController.cs" />
+        <option value="$PROJECT_DIR$/WeatherStation.Api.Data/contract/IDal.cs" />
+        <option value="$PROJECT_DIR$/WeatherStation.Api.Data/implementation/WeatherStationDal.cs" />
+        <option value="$PROJECT_DIR$/WeatherStation.Api.Core/Controllers/RecordController.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="1057" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="WeatherStation.Api (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="WeatherStation.Api (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="WeatherStation.Api.Core" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="WeatherStation.Api (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="WeatherStation.Api.Core" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Controllers" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="WeatherStation.Api (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="WeatherStation.Api.Data" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="WeatherStation.Api (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="WeatherStation.Api.Data" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="contract" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="WeatherStation.Api (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="WeatherStation.Api.Data" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="implementation" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="WeatherStation.Api (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="WeatherStation.Api.Data" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Migrations" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="WeatherStation.Api (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="WeatherStation.Api.Data" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="model" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+    <property name="RiderNuGetCacheManager.AutoClear.global-packages" value="2" />
+    <property name="RiderNuGetCacheManager.AutoClear.http-cache" value="2" />
+    <property name="RiderNuGetCacheManager.AutoClear.packages-cache" value="2" />
+    <property name="RiderNuGetCacheManager.AutoClear.temp" value="1" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/WeatherStation.Api.Core/bin/Debug/netcoreapp2.0/WeatherStation.Api.Core.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WeatherStation.Api.Core" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs>
+        <env name="ASPNETCORE_ENVIRONMENT" value="Development" />
+        <env name="ASPNETCORE_URLS" value="http://localhost:5000" />
+      </envs>
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/WeatherStation.Api.Core/WeatherStation.Api.Core.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.0" />
+      <browser url="http://localhost:5000" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="26769a61-897e-43f8-8eb8-fcad73e20b4e" name="Default" comment="" />
+      <created>1530033077197</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1530033077197</updated>
+      <workItem from="1530033078407" duration="6436000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6436000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1920" height="1057" extended-state="0" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/WeatherStation.Api.Core/Controllers/RecordController.cs</url>
+          <line>28</line>
+          <properties documentPath="$PROJECT_DIR$/WeatherStation.Api.Core/Controllers/RecordController.cs" initialLine="28">
+            <startOffsets>
+              <startOffset value="744" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="762" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/WeatherStation.Api.Data.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/Class1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Core/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Core/Controllers/MeteoController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0E1B27A4-6035-47D9-A041-CEF439F84C41/8c/7276915c/ExecutionContextSwitcher.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="6" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0E1B27A4-6035-47D9-A041-CEF439F84C41/55/6745464a/AsyncTaskMethodBuilder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="59" column="8" lean-forward="false" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/882C7DDC-3607-4EF5-A584-61262F32B442/ea/195f665a/ControllerActionInvoker.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="295" column="8" lean-forward="false" selection-start-line="295" selection-start-column="8" selection-end-line="295" selection-end-column="8" />
+          <folding>
+            <marker date="1530036354654" expanded="true" signature="0:415" ph="/* Decompiled with JetBrains decompiler ... */" />
+            <marker date="1530036354654" expanded="false" signature="423:787" ph="..." />
+            <marker date="1530036354654" expanded="true" signature="832:16820" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="907:16818" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="1531:1723" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="1773:1851" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="1789:1845" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="1899:2092" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="2236:8542" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="2262:8536" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="2743:2854" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="3157:3575" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="3621:4033" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="4613:4728" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="4971:5359" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="5241:5346" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="5990:6446" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="6265:6370" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="6461:6795" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="6594:6716" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="7466:7576" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="7752:8138" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="7999:8054" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="8596:9463" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="8674:9088" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="9115:9457" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="9369:9448" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="9547:10110" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="10160:14132" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="10543:11099" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="11109:13940" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="11419:11551" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="11597:11742" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="11803:12120" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="12194:12778" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="12468:12768" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="12820:13175" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="13076:13131" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="13235:13391" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="13404:13784" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="13671:13740" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="13954:14126" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="14210:14389" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="14395:14578" ph="/// &lt;remarks&gt;&lt;see cref=&quot;M:Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync&quot; /&gt; for deta ... " />
+            <marker date="1530036354654" expanded="true" signature="14637:15068" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="15132:15381" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="15420:15772" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="15907:16549" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="16189:16520" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="16573:16614" ph="{...}" />
+            <marker date="1530036354654" expanded="true" signature="16638:16814" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/model/Broadcaster.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+          <folding>
+            <marker date="1530037455290" expanded="true" signature="74:196" ph="{...}" />
+            <marker date="1530037455290" expanded="true" signature="105:194" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/model/Record.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding>
+            <marker date="1530033544648" expanded="true" signature="54:369" ph="{...}" />
+            <marker date="1530033544648" expanded="true" signature="80:367" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/implementation/WeatherStationContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+          <folding>
+            <marker date="1530034714311" expanded="false" signature="6:87" ph="..." />
+            <marker date="1530034714311" expanded="true" signature="137:511" ph="{...}" />
+            <marker date="1530034714311" expanded="true" signature="190:509" ph="{...}" />
+            <marker date="1530034714311" expanded="true" signature="395:494" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/contract/IDal.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <marker date="1530038233972" expanded="true" signature="6:84" ph="..." />
+            <marker date="1530038233972" expanded="true" signature="128:543" ph="{...}" />
+            <marker date="1530038233972" expanded="true" signature="135:209" ph="/// Contract of the Data Access Layer ... " />
+            <marker date="1530038233972" expanded="true" signature="249:541" ph="{...}" />
+            <marker date="1530038233972" expanded="true" signature="264:301" ph="/* Add section ... */" />
+            <marker date="1530038233972" expanded="true" signature="420:457" ph="/* Get section ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/implementation/WeatherStationDal.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="60" column="88" lean-forward="false" selection-start-line="60" selection-start-column="88" selection-end-line="60" selection-end-column="88" />
+          <folding>
+            <marker date="1530038339154" expanded="true" signature="6:143" ph="..." />
+            <marker date="1530038339154" expanded="true" signature="193:1756" ph="{...}" />
+            <marker date="1530038339154" expanded="true" signature="200:299" ph="/// Implementation of IDal with SQLite and EntityFrameworkCore ... " />
+            <marker date="1530038339154" expanded="true" signature="341:1754" ph="{...}" />
+            <marker date="1530038339154" expanded="true" signature="356:415" ph="/// EF context ... " />
+            <marker date="1530038339154" expanded="true" signature="507:579" ph="{...}" />
+            <marker date="1530038339154" expanded="true" signature="618:670" ph="{...}" />
+            <marker date="1530038339154" expanded="true" signature="778:1481" ph="{...}" />
+            <marker date="1530038339154" expanded="true" signature="939:1150" ph="{...}" />
+            <marker date="1530038339154" expanded="true" signature="1018:1079" ph="{...}" />
+            <marker date="1530038339154" expanded="true" signature="1205:1379" ph="{...}" />
+            <marker date="1530038339154" expanded="true" signature="1534:1600" ph="{...}" />
+            <marker date="1530038339154" expanded="true" signature="1639:1748" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Core/Controllers/ValuesController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+          <folding>
+            <marker date="1530037950049" expanded="true" signature="6:128" ph="..." />
+            <marker date="1530037950049" expanded="true" signature="175:935" ph="{...}" />
+            <marker date="1530037950049" expanded="true" signature="256:933" ph="{...}" />
+            <marker date="1530037950049" expanded="true" signature="347:421" ph="{...}" />
+            <marker date="1530037950049" expanded="true" signature="514:562" ph="{...}" />
+            <marker date="1530037950049" expanded="true" signature="659:679" ph="{...}" />
+            <marker date="1530037950049" expanded="true" signature="791:811" ph="{...}" />
+            <marker date="1530037950049" expanded="true" signature="907:927" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Core/Controllers/RecordController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding>
+            <marker date="1530038837149" expanded="false" signature="6:181" ph="..." />
+            <marker date="1530038837149" expanded="true" signature="228:840" ph="{...}" />
+            <marker date="1530038837149" expanded="true" signature="311:838" ph="{...}" />
+            <marker date="1530038837149" expanded="true" signature="387:620" ph="{...}" />
+            <marker date="1530038837149" expanded="true" signature="492:566" ph="{...}" />
+            <marker date="1530038837149" expanded="true" signature="721:813" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

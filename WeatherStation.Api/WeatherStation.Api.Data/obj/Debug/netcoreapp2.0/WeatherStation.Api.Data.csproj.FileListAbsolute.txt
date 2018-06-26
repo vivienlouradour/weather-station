@@ -1,0 +1,10 @@
+/home/vivien/Documents/dev-perso/WeatherStation/WeatherStation.Api/WeatherStation.Api.Data/bin/Debug/netcoreapp2.0/WeatherStation.Api.Data.deps.json
+/home/vivien/Documents/dev-perso/WeatherStation/WeatherStation.Api/WeatherStation.Api.Data/bin/Debug/netcoreapp2.0/WeatherStation.Api.Data.runtimeconfig.json
+/home/vivien/Documents/dev-perso/WeatherStation/WeatherStation.Api/WeatherStation.Api.Data/bin/Debug/netcoreapp2.0/WeatherStation.Api.Data.runtimeconfig.dev.json
+/home/vivien/Documents/dev-perso/WeatherStation/WeatherStation.Api/WeatherStation.Api.Data/bin/Debug/netcoreapp2.0/WeatherStation.Api.Data.dll
+/home/vivien/Documents/dev-perso/WeatherStation/WeatherStation.Api/WeatherStation.Api.Data/bin/Debug/netcoreapp2.0/WeatherStation.Api.Data.pdb
+/home/vivien/Documents/dev-perso/WeatherStation/WeatherStation.Api/WeatherStation.Api.Data/obj/Debug/netcoreapp2.0/WeatherStation.Api.Data.csproj.CoreCompileInputs.cache
+/home/vivien/Documents/dev-perso/WeatherStation/WeatherStation.Api/WeatherStation.Api.Data/obj/Debug/netcoreapp2.0/WeatherStation.Api.Data.AssemblyInfoInputs.cache
+/home/vivien/Documents/dev-perso/WeatherStation/WeatherStation.Api/WeatherStation.Api.Data/obj/Debug/netcoreapp2.0/WeatherStation.Api.Data.AssemblyInfo.cs
+/home/vivien/Documents/dev-perso/WeatherStation/WeatherStation.Api/WeatherStation.Api.Data/obj/Debug/netcoreapp2.0/WeatherStation.Api.Data.dll
+/home/vivien/Documents/dev-perso/WeatherStation/WeatherStation.Api/WeatherStation.Api.Data/obj/Debug/netcoreapp2.0/WeatherStation.Api.Data.pdb
