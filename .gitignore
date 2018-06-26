@@ -1,3 +1,4 @@
-WeatherStation.Api/WeatherStation.Api.Core/bin/
+Debug/
+Release/
 WeatherStation.Api/WeatherStation.Api.Data/Migrations
 *.db
