@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using WeatherStation.Api.Data.contract;
+using WeatherStation.Api.Data.Exceptions;
 using WeatherStation.Api.Data.model;
 
 namespace WeatherStation.Api.Data.implementation
@@ -54,6 +55,14 @@ namespace WeatherStation.Api.Data.implementation
         public IEnumerable<Record> GetAllRecords()
         {
             return _context.Records.ToList();
+        }
+
+        public IEnumerable<Record> GetRecordsByDateRange(DateTime begin, DateTime end)
+        {
+            if(begin == DateTime.MinValue || end == DateTime.MinValue)
+                throw new  ApiArgumentException("Error parameter : begin and end have to be valid datetimes");
+            
+            return _context.Records.Where(record => record.DateTime >= begin && record.DateTime <= end).ToList();
         }
 
         public Record GetLastRecord()

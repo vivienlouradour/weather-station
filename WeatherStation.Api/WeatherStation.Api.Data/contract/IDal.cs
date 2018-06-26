@@ -18,7 +18,9 @@ namespace WeatherStation.Api.Data.contract
          * Get section
          */
         IEnumerable<Record> GetAllRecords();
+        IEnumerable<Record> GetRecordsByDateRange(DateTime begin, DateTime end); 
         Record GetLastRecord();
+        
 
     }
 }
