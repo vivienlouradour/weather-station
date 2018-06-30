@@ -10,24 +10,162 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="Program.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Core/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding>
+                <marker date="1530377111866" expanded="false" signature="6:255" ph="..." />
+                <marker date="1530377111866" expanded="true" signature="290:611" ph="{...}" />
+                <marker date="1530377111866" expanded="true" signature="317:609" ph="{...}" />
+                <marker date="1530377111866" expanded="true" signature="370:428" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecordController.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Core/Controllers/RecordController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+              <folding>
+                <marker date="1530380985694" expanded="false" signature="6:555" ph="..." />
+                <marker date="1530380985694" expanded="true" signature="602:3978" ph="{...}" />
+                <marker date="1530380985694" expanded="true" signature="698:3976" ph="{...}" />
+                <marker date="1530380985694" expanded="true" signature="825:877" ph="{...}" />
+                <marker date="1530380985694" expanded="true" signature="994:1629" ph="{...}" />
+                <marker date="1530380985694" expanded="true" signature="1066:1619" ph="{...}" />
+                <marker date="1530380985694" expanded="true" signature="1100:1353" ph="{...}" />
+                <marker date="1530380985694" expanded="true" signature="1401:1478" ph="{...}" />
+                <marker date="1530380985694" expanded="true" signature="1515:1605" ph="{...}" />
+                <marker date="1530380985694" expanded="true" signature="1775:2310" ph="{...}" />
+                <marker date="1530380985694" expanded="true" signature="1847:2299" ph="{...}" />
+                <marker date="1530380985694" expanded="true" signature="1881:2160" ph="{...}" />
+                <marker date="1530380985694" expanded="true" signature="2208:2285" ph="{...}" />
+                <marker date="1530380985694" expanded="true" signature="2368:2942" ph="{...}" />
+                <marker date="1530380985694" expanded="true" signature="2440:2932" ph="{...}" />
+                <marker date="1530380985694" expanded="true" signature="3050:3693" ph="{...}" />
+                <marker date="1530380985694" expanded="true" signature="3122:3683" ph="{...}" />
+                <marker date="1530380985694" expanded="true" signature="3233:3438" ph="{...}" />
+                <marker date="1530380985694" expanded="true" signature="3478:3555" ph="{...}" />
+                <marker date="1530380985694" expanded="true" signature="3589:3669" ph="{...}" />
+                <marker date="1530380985694" expanded="true" signature="3726:3952" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Record.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/Database/Record.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1530377111866" expanded="true" signature="54:322" ph="{...}" />
+                <marker date="1530377111866" expanded="true" signature="80:320" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Broadcaster.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/Database/Broadcaster.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1530377111866" expanded="true" signature="74:207" ph="{...}" />
+                <marker date="1530377111866" expanded="true" signature="105:205" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WeatherStationContext.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/Database/WeatherStationContext.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+              <folding>
+                <marker date="1530377111866" expanded="false" signature="6:87" ph="..." />
+                <marker date="1530377111866" expanded="true" signature="137:676" ph="{...}" />
+                <marker date="1530377111866" expanded="true" signature="190:674" ph="{...}" />
+                <marker date="1530377111866" expanded="true" signature="560:659" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApiArgumentException.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/Exceptions/ApiArgumentException.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="70" lean-forward="false" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
+              <folding>
+                <marker date="1530377111866" expanded="true" signature="44:184" ph="{...}" />
+                <marker date="1530377111866" expanded="true" signature="99:182" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WeatherStationDal.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/Implementations/WeatherStationDal.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="57" column="8" lean-forward="false" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+              <folding>
+                <marker date="1530377442504" expanded="false" signature="6:185" ph="..." />
+                <marker date="1530377442504" expanded="true" signature="235:3235" ph="{...}" />
+                <marker date="1530377442504" expanded="true" signature="242:341" ph="/// Implementation of IDal with SQLite and EntityFrameworkCore ... " />
+                <marker date="1530377442504" expanded="true" signature="383:3233" ph="{...}" />
+                <marker date="1530377442504" expanded="true" signature="398:457" ph="/// EF context ... " />
+                <marker date="1530377442504" expanded="true" signature="587:639" ph="{...}" />
+                <marker date="1530377442504" expanded="true" signature="678:730" ph="{...}" />
+                <marker date="1530377442504" expanded="true" signature="838:1788" ph="{...}" />
+                <marker date="1530377442504" expanded="true" signature="1193:1444" ph="{...}" />
+                <marker date="1530377442504" expanded="true" signature="1272:1333" ph="{...}" />
+                <marker date="1530377442504" expanded="true" signature="1496:1686" ph="{...}" />
+                <marker date="1530377442504" expanded="true" signature="1863:1953" ph="{...}" />
+                <marker date="1530377442504" expanded="true" signature="2065:2418" ph="{...}" />
+                <marker date="1530377442504" expanded="true" signature="2479:2612" ph="{...}" />
+                <marker date="1530377442504" expanded="true" signature="2674:2745" ph="{...}" />
+                <marker date="1530377442504" expanded="true" signature="2829:3209" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>500</find>
     </findStrings>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/WeatherStation.Api.Data/Database/Record.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WeatherStation.Api.Core/Controllers/RecordController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WeatherStation.Api.Data/Exceptions/ApiArgumentException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WeatherStation.Api.Data/Implementations/WeatherStationDal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WeatherStation.Api.Data/Database/WeatherStationContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WeatherStation.Api.Data/Database/Broadcaster.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WeatherStation.Api.Core/Program.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/WeatherStation.Api.Core/Controllers/RecordController.cs" />
         <option value="$PROJECT_DIR$/WeatherStation.Api.Data/Contracts/IDal.cs" />
-        <option value="$PROJECT_DIR$/WeatherStation.Api.Data/Implementations/WeatherStationDal.cs" />
         <option value="$PROJECT_DIR$/WeatherStation.Api.Core/Controllers/BroadcasterController.cs" />
         <option value="$PROJECT_DIR$/WeatherStation.Api.Core/Startup.cs" />
         <option value="$PROJECT_DIR$/WeatherStation.Api.Data/WeatherStation.Api.Data.csproj" />
         <option value="$PROJECT_DIR$/WeatherStation.Api.Data/Exceptions/ApiArgumentException.cs" />
         <option value="$PROJECT_DIR$/WeatherStation.Api.Core/Program.cs" />
+        <option value="$PROJECT_DIR$/WeatherStation.Api.Data/Implementations/WeatherStationDal.cs" />
+        <option value="$PROJECT_DIR$/WeatherStation.Api.Core/Controllers/RecordController.cs" />
       </list>
     </option>
   </component>
@@ -72,7 +210,31 @@
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="WeatherStation.Api (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="WeatherStation.Api.Core" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Controllers" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="WeatherStation.Api (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="WeatherStation.Api.Data" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="WeatherStation.Api (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="WeatherStation.Api.Data" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Contracts" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="WeatherStation.Api (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="WeatherStation.Api.Data" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Database" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="WeatherStation.Api (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="WeatherStation.Api.Data" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Exceptions" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
           <select />
@@ -133,12 +295,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530368695356</updated>
-      <workItem from="1530368697276" duration="6526000" />
+      <workItem from="1530368697276" duration="11212000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6526000" />
+    <option name="totallyTimeSpent" value="11212000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -184,7 +346,35 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/WeatherStation.Api.Core/Controllers/RecordController.cs</url>
+          <line>94</line>
+          <properties documentPath="$PROJECT_DIR$/WeatherStation.Api.Core/Controllers/RecordController.cs" initialLine="94">
+            <startOffsets>
+              <startOffset value="3153" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="3172" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/WeatherStation.Api.Core/Controllers/RecordController.cs</url>
+          <line>32</line>
+          <properties documentPath="$PROJECT_DIR$/WeatherStation.Api.Core/Controllers/RecordController.cs" initialLine="32">
+            <startOffsets>
+              <startOffset value="1017" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="1066" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -197,14 +387,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/Database/Broadcaster.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Core/WeatherStation.Api.Core.csproj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -213,26 +395,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/Exceptions/ApiArgumentException.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="70" lean-forward="false" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/WeatherStation.Api.Data.csproj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="206" lean-forward="false" selection-start-line="13" selection-start-column="206" selection-end-line="13" selection-end-column="206" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/Implementations/WeatherStationDal.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="73" column="54" lean-forward="false" selection-start-line="73" selection-start-column="54" selection-end-line="73" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -253,26 +419,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Core/Controllers/RecordController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="48" column="53" lean-forward="false" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Core/appsettings.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/Database/WeatherStationContext.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
           <folding />
         </state>
       </provider>
@@ -289,7 +439,113 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1530377111866" expanded="false" signature="6:255" ph="..." />
+            <marker date="1530377111866" expanded="true" signature="290:611" ph="{...}" />
+            <marker date="1530377111866" expanded="true" signature="317:609" ph="{...}" />
+            <marker date="1530377111866" expanded="true" signature="370:428" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/Database/Record.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1530377111866" expanded="true" signature="54:322" ph="{...}" />
+            <marker date="1530377111866" expanded="true" signature="80:320" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/Database/Broadcaster.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1530377111866" expanded="true" signature="74:207" ph="{...}" />
+            <marker date="1530377111866" expanded="true" signature="105:205" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/Exceptions/ApiArgumentException.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="70" lean-forward="false" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
+          <folding>
+            <marker date="1530377111866" expanded="true" signature="44:184" ph="{...}" />
+            <marker date="1530377111866" expanded="true" signature="99:182" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/Database/WeatherStationContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <marker date="1530377111866" expanded="false" signature="6:87" ph="..." />
+            <marker date="1530377111866" expanded="true" signature="137:676" ph="{...}" />
+            <marker date="1530377111866" expanded="true" signature="190:674" ph="{...}" />
+            <marker date="1530377111866" expanded="true" signature="560:659" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Data/Implementations/WeatherStationDal.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="57" column="8" lean-forward="false" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+          <folding>
+            <marker date="1530377442504" expanded="false" signature="6:185" ph="..." />
+            <marker date="1530377442504" expanded="true" signature="235:3235" ph="{...}" />
+            <marker date="1530377442504" expanded="true" signature="242:341" ph="/// Implementation of IDal with SQLite and EntityFrameworkCore ... " />
+            <marker date="1530377442504" expanded="true" signature="383:3233" ph="{...}" />
+            <marker date="1530377442504" expanded="true" signature="398:457" ph="/// EF context ... " />
+            <marker date="1530377442504" expanded="true" signature="587:639" ph="{...}" />
+            <marker date="1530377442504" expanded="true" signature="678:730" ph="{...}" />
+            <marker date="1530377442504" expanded="true" signature="838:1788" ph="{...}" />
+            <marker date="1530377442504" expanded="true" signature="1193:1444" ph="{...}" />
+            <marker date="1530377442504" expanded="true" signature="1272:1333" ph="{...}" />
+            <marker date="1530377442504" expanded="true" signature="1496:1686" ph="{...}" />
+            <marker date="1530377442504" expanded="true" signature="1863:1953" ph="{...}" />
+            <marker date="1530377442504" expanded="true" signature="2065:2418" ph="{...}" />
+            <marker date="1530377442504" expanded="true" signature="2479:2612" ph="{...}" />
+            <marker date="1530377442504" expanded="true" signature="2674:2745" ph="{...}" />
+            <marker date="1530377442504" expanded="true" signature="2829:3209" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeatherStation.Api.Core/Controllers/RecordController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+          <folding>
+            <marker date="1530380985694" expanded="false" signature="6:555" ph="..." />
+            <marker date="1530380985694" expanded="true" signature="602:3978" ph="{...}" />
+            <marker date="1530380985694" expanded="true" signature="698:3976" ph="{...}" />
+            <marker date="1530380985694" expanded="true" signature="825:877" ph="{...}" />
+            <marker date="1530380985694" expanded="true" signature="994:1629" ph="{...}" />
+            <marker date="1530380985694" expanded="true" signature="1066:1619" ph="{...}" />
+            <marker date="1530380985694" expanded="true" signature="1100:1353" ph="{...}" />
+            <marker date="1530380985694" expanded="true" signature="1401:1478" ph="{...}" />
+            <marker date="1530380985694" expanded="true" signature="1515:1605" ph="{...}" />
+            <marker date="1530380985694" expanded="true" signature="1775:2310" ph="{...}" />
+            <marker date="1530380985694" expanded="true" signature="1847:2299" ph="{...}" />
+            <marker date="1530380985694" expanded="true" signature="1881:2160" ph="{...}" />
+            <marker date="1530380985694" expanded="true" signature="2208:2285" ph="{...}" />
+            <marker date="1530380985694" expanded="true" signature="2368:2942" ph="{...}" />
+            <marker date="1530380985694" expanded="true" signature="2440:2932" ph="{...}" />
+            <marker date="1530380985694" expanded="true" signature="3050:3693" ph="{...}" />
+            <marker date="1530380985694" expanded="true" signature="3122:3683" ph="{...}" />
+            <marker date="1530380985694" expanded="true" signature="3233:3438" ph="{...}" />
+            <marker date="1530380985694" expanded="true" signature="3478:3555" ph="{...}" />
+            <marker date="1530380985694" expanded="true" signature="3589:3669" ph="{...}" />
+            <marker date="1530380985694" expanded="true" signature="3726:3952" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

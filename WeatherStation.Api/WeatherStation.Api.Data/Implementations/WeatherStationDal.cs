@@ -29,6 +29,11 @@ namespace WeatherStation.Api.Data.implementation
 
         public void AddRecord(DateTime dateTime, float temperature, float humidity, string broacasterName)
         {
+            if(
+                broacasterName == null ||
+                dateTime.Equals(DateTime.MinValue) 
+                )
+                throw new ApiArgumentException("argument error");
             Broadcaster broadcaster = _context.Broadcasters.FirstOrDefault(bc => bc.Name.Equals(broacasterName));
             if (broadcaster == null)
             {

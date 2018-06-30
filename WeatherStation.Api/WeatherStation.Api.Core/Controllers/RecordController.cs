@@ -88,26 +88,34 @@ namespace WeatherStation.Api.Core.Controllers
         }
         
         [HttpPost]
-        public async Task<HttpResponseMessage> AddRecord([FromBody]DateTime dateTime, [FromBody]float temperature, [FromBody]float humidity, [FromBody]string broadcasterName)
+        public async Task<IActionResult> AddRecord([FromBody]PostRecord record)
         {
             using (var dal = new WeatherStationDal(_context))
             {
-                HttpStatusCode statusCode = HttpStatusCode.Created;
+                if (record == null)
+                    return BadRequest();
                 try
                 {
-                    dal.AddRecord(dateTime, temperature, humidity, broadcasterName);
+                    dal.AddRecord(record.DateTime, record.Temperature, record.Humidity, record.BroadcasterName);
+                    return Created(String.Empty, null);
                 }
                 catch (ApiException ex)
                 {
-                    statusCode = HttpStatusCode.BadRequest;
+                    return BadRequest();
                 }
                 catch (Exception)
                 {
-                    statusCode = HttpStatusCode.InternalServerError;
+                    return StatusCode(500);
                 }
-
-                return new HttpResponseMessage(statusCode);
             }
+        }
+
+        public class PostRecord
+        {
+            public DateTime DateTime { get; set; }
+            public float Temperature { get; set; }
+            public float Humidity { get; set; }
+            public string BroadcasterName { get; set; }
         }
         
         
