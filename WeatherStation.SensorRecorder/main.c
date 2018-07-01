@@ -21,7 +21,7 @@ int postData(char* date, float temp, float hum, char* broadcasterName)
     
     char body[256];
     sprintf(body, "{\"DateTime\":\"%s\",\"Temperature\": %f,\"Humidity\": %f,\"BroadcasterName\":\"%s\"}", date, temp, hum, broadcasterName);
-    char *header = "POST /weatherstation/api/record/ HTTP/1.1\r\nHost: localhost:5000\r\nContent-Type: application/json\r\nCache-Control: no-cache\r\nContent-Length: ";
+    char *header = "POST /weatherstation/api/record/ HTTP/1.1\r\nHost: ninsdev.tk:5000\r\nContent-Type: application/json\r\nCache-Control: no-cache\r\nContent-Length: ";
     
     char contentLength[256];
     snprintf(contentLength, sizeof contentLength, "%zu", strlen(body));
@@ -40,13 +40,17 @@ int postData(char* date, float temp, float hum, char* broadcasterName)
 
     /* fill in the parameters */
     printf("Request:\n%s\n",message);
-printf("hello");
     /* create the socket */
+    printf("1\n");
     sockfd = socket(AF_INET, SOCK_STREAM, 0);
+    printf("2\n");
+
     if (sockfd < 0) error("ERROR opening socket");
 
     /* lookup the ip address */
     server = gethostbyname(host);
+    printf("3\n");
+
     if (server == NULL) error("ERROR, no such host");
 
     /* fill in the structure */
@@ -54,15 +58,19 @@ printf("hello");
     serv_addr.sin_family = AF_INET;
     serv_addr.sin_port = htons(portno);
     memcpy(&serv_addr.sin_addr.s_addr,server->h_addr_list[0],server->h_length);
+    printf("4\n");
 
     /* connect the socket */
     if (connect(sockfd,(struct sockaddr *)&serv_addr,sizeof(serv_addr)) < 0)
         error("ERROR connecting");
+    printf("5\n");
 
     /* send the request */
     total = strlen(message);
     sent = 0;
     do {
+    printf("boucle\n");
+
         printf("hello");
         bytes = write(sockfd,message+sent,total-sent);
         if (bytes < 0)
@@ -71,12 +79,15 @@ printf("hello");
             break;
         sent+=bytes;
     } while (sent < total);
+    printf("6\n");
+
 
     
 
     /* close the socket */
     close(sockfd);
 
+    printf("7\n");
 
 
     return 0;
@@ -152,10 +163,13 @@ int main(int argc, char *argv[]){
         time_t t = time(NULL);
         struct tm tm = *localtime(&t);
         char date[256];
-        sprintf(date, "%d-%d-%dT%d:%d:%d.000Z", tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec);
-        postData(date, cTemp, humidity, broadcasterName);
+        sprintf(date, "%d-%02d-%02dT%d:%02d:%02d.000Z", tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec);
+        if(postData(date, cTemp, humidity, broadcasterName) != 0){
+            printf("erreur sending post request");
+            return 1;
+        }
 
-        printf("sleeping for 600 sc");
+        printf("sleeping for 600 sc\n");
         sleep(600);
     }
     return 0;

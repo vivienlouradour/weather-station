@@ -1,0 +1,7 @@
+Debug/
+Release/
+obj/
+.idea/
+*.db
+.vscode/
+out/

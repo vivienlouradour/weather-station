@@ -36,7 +36,7 @@ namespace WeatherStation.Api.Core.Controllers
                 {
                     var record = dal.GetLastRecord(broadcasterName);
                     if(record == null)
-                        return NotFound(record);
+                        return NotFound();
             
                     return Ok(record);        
                 }
