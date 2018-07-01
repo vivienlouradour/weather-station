@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using WeatherStation.Api.Data.implementation;
 
 namespace WeatherStation.Api.Core.Controllers
@@ -8,10 +9,12 @@ namespace WeatherStation.Api.Core.Controllers
     public class BroadcasterController : Controller
     {
         private readonly WeatherStationContext _context;
+        private readonly ILogger _logger;
 
-        public BroadcasterController(WeatherStationContext context)
+        public BroadcasterController(WeatherStationContext context, ILogger<BroadcasterController> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         public IActionResult GetAll()

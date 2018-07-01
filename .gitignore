@@ -5,3 +5,5 @@ obj/
 *.db
 .vscode/
 out/
+WeatherStation.Api.Core.log
+*.out

@@ -9,7 +9,9 @@
 #include <sys/ioctl.h>
 #include <fcntl.h>
 #include <time.h>
+#include <string.h>
 
+int recordDelay = 600;
 void error(const char *msg) { perror(msg); exit(0); }
 
 
@@ -41,15 +43,12 @@ int postData(char* date, float temp, float hum, char* broadcasterName)
     /* fill in the parameters */
     printf("Request:\n%s\n",message);
     /* create the socket */
-    printf("1\n");
     sockfd = socket(AF_INET, SOCK_STREAM, 0);
-    printf("2\n");
 
     if (sockfd < 0) error("ERROR opening socket");
 
     /* lookup the ip address */
     server = gethostbyname(host);
-    printf("3\n");
 
     if (server == NULL) error("ERROR, no such host");
 
@@ -58,20 +57,15 @@ int postData(char* date, float temp, float hum, char* broadcasterName)
     serv_addr.sin_family = AF_INET;
     serv_addr.sin_port = htons(portno);
     memcpy(&serv_addr.sin_addr.s_addr,server->h_addr_list[0],server->h_length);
-    printf("4\n");
 
     /* connect the socket */
     if (connect(sockfd,(struct sockaddr *)&serv_addr,sizeof(serv_addr)) < 0)
         error("ERROR connecting");
-    printf("5\n");
 
     /* send the request */
     total = strlen(message);
     sent = 0;
     do {
-    printf("boucle\n");
-
-        printf("hello");
         bytes = write(sockfd,message+sent,total-sent);
         if (bytes < 0)
             error("ERROR writing message to socket");
@@ -79,17 +73,21 @@ int postData(char* date, float temp, float hum, char* broadcasterName)
             break;
         sent+=bytes;
     } while (sent < total);
-    printf("6\n");
 
-
+    memset(response,0,sizeof(response));
+    total = sizeof(response)-1;
+    received = 0;
+    bytes = read(sockfd,response+received,total-received);
     
+    if(strpbrk(response, "201 Created") == NULL){
+        printf("API Server error. \n Response : \n%s", response);
+        return 1;
+    }
+    printf("Sent and created\n");
+
 
     /* close the socket */
     close(sockfd);
-
-    printf("7\n");
-
-
     return 0;
  
 }
@@ -113,7 +111,8 @@ int main(int argc, char *argv[]){
 	ioctl(file, I2C_SLAVE, 0x40);
 
     while(1){
-		// Send humidity measurement command(0xF5)
+        printf("New record...\n");
+        // Send humidity measurement command(0xF5)
 		char config[1] = {0xF5};
 		write(file, config, 1);
 		sleep(1);
@@ -169,7 +168,7 @@ int main(int argc, char *argv[]){
             return 1;
         }
 
-        printf("sleeping for 600 sc\n");
+        printf("sleeping for %d seconds\n", recordDelay);
         sleep(600);
     }
     return 0;

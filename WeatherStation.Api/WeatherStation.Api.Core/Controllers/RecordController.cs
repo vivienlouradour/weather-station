@@ -8,7 +8,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking;
 using Microsoft.EntityFrameworkCore.ValueGeneration.Internal;
+using Microsoft.Extensions.Logging;
 using Microsoft.WindowsAzure.Storage.RetryPolicies;
+using WeatherStation.Api.Core.Helpers;
 using WeatherStation.Api.Data.contract;
 using WeatherStation.Api.Data.Exceptions;
 using WeatherStation.Api.Data.implementation;
@@ -20,10 +22,12 @@ namespace WeatherStation.Api.Core.Controllers
     public class RecordController : Controller
     {
         private readonly WeatherStationContext _context;
+        private readonly SimpleLogger _logger;
 
         public RecordController(WeatherStationContext context)
         {
             _context = context;
+            _logger = new SimpleLogger();
         }
 
         // GET 
@@ -35,10 +39,10 @@ namespace WeatherStation.Api.Core.Controllers
                 try
                 {
                     var record = dal.GetLastRecord(broadcasterName);
-                    if(record == null)
+                    if (record == null)
                         return NotFound();
-            
-                    return Ok(record);        
+
+                    return Ok(record);
                 }
                 catch (ApiArgumentException ex)
                 {
@@ -61,7 +65,7 @@ namespace WeatherStation.Api.Core.Controllers
                     var records = dal.GetRecordsByDateRange(broadcasterName, begin, end).ToList();
                     if (!records.Any())
                         return NotFound();
-                    
+
                     return Ok(records);
                 }
                 catch (ApiArgumentException ex)
@@ -86,25 +90,40 @@ namespace WeatherStation.Api.Core.Controllers
                 dal.AddRecord(dateTime.AddMinutes(10), temp, hum, "broadcasterTest");
             }
         }
-        
+
         [HttpPost]
-        public async Task<IActionResult> AddRecord([FromBody]PostRecord record)
+        public async Task<IActionResult> AddRecord([FromBody] PostRecord record)
         {
+            _logger.Info("posting record : " + record);
             using (var dal = new WeatherStationDal(_context))
             {
                 if (record == null)
+                {
+                    _logger.Info("Record is null (not created).");
                     return BadRequest();
+                }
+
                 try
                 {
                     dal.AddRecord(record.DateTime, record.Temperature, record.Humidity, record.BroadcasterName);
+                    _logger.Info("Record created.");
                     return Created(String.Empty, null);
                 }
                 catch (ApiException ex)
                 {
+                    string exMessage = ex.Message + Environment.NewLine;
+                    _logger.Error("Error creating record : " + exMessage);
                     return BadRequest();
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
+                    string exMessage = ex.Message + Environment.NewLine;
+                    while (ex.InnerException != null)
+                    {
+                        exMessage += $"InnerException : {ex.InnerException.Message}{Environment.NewLine}";
+                        ex = ex.InnerException;
+                    }
+                    _logger.Error("Error creating record : " + exMessage);
                     return StatusCode(500);
                 }
             }
@@ -116,8 +135,12 @@ namespace WeatherStation.Api.Core.Controllers
             public float Temperature { get; set; }
             public float Humidity { get; set; }
             public string BroadcasterName { get; set; }
+
+            public override string ToString()
+            {
+                return
+                    $"Date : {DateTime.ToString()} ; Temp : {Temperature} ; Hum : {Humidity} ; Broadcaster : {BroadcasterName}";
+            }
         }
-        
-        
     }
 }
