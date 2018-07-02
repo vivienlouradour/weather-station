@@ -18,4 +18,16 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Dev steps
+
+```bash
+# install Node.js and npm   
+sudo apt install nodejs  
+
+# install Vue CLI  
+sudo npm install -g vue-cli  
+
+# create new project  
+vue init webpack WeatherStation.WebClient  
+```
+
