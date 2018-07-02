@@ -95,14 +95,14 @@ namespace WeatherStation.Api.Core.Controllers
         public async Task<IActionResult> AddRecord([FromBody] PostRecord record)
         {
             _logger.Info("posting record : " + record);
+            if (record == null)
+            {
+                _logger.Info("Record is null (not created).");
+                return BadRequest();
+            }
+            
             using (var dal = new WeatherStationDal(_context))
             {
-                if (record == null)
-                {
-                    _logger.Info("Record is null (not created).");
-                    return BadRequest();
-                }
-
                 try
                 {
                     dal.AddRecord(record.DateTime, record.Temperature, record.Humidity, record.BroadcasterName);
