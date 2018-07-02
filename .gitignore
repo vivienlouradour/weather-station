@@ -1,9 +1,19 @@
+# ASP.Net Core
 Debug/
 Release/
 obj/
-.idea/
 *.db
-.vscode/
 out/
 WeatherStation.Api.Core.log
 *.out
+
+# Vue.js
+.DS_Store
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
+
+# IDE
+.idea/
+.vscode/
