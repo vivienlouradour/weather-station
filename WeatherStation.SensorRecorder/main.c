@@ -15,15 +15,13 @@ int recordDelay = 600;
 void error(const char *msg) { perror(msg); exit(0); }
 
 
-int postData(char* date, float temp, float hum, char* broadcasterName)
-{
-    /* first what are we going to send and where are we going to send it? */
-    int portno = 5000;
-    char *host = "ninsdev.tk";
-    
+
+int postData(char* host, int port, char* date, float temp, float hum, char* broadcasterName)
+{   
     char body[256];
     sprintf(body, "{\"DateTime\":\"%s\",\"Temperature\": %f,\"Humidity\": %f,\"BroadcasterName\":\"%s\"}", date, temp, hum, broadcasterName);
-    char *header = "POST /weatherstation/api/record/ HTTP/1.1\r\nHost: ninsdev.tk:5000\r\nContent-Type: application/json\r\nCache-Control: no-cache\r\nContent-Length: ";
+    char header[256]; 
+    sprintf(header, "POST /weatherstation/api/record/ HTTP/1.1\r\nHost: %s:%d\r\nContent-Type: application/json\r\nCache-Control: no-cache\r\nContent-Length: ", host, port);
     
     char contentLength[256];
     snprintf(contentLength, sizeof contentLength, "%zu", strlen(body));
@@ -55,7 +53,7 @@ int postData(char* date, float temp, float hum, char* broadcasterName)
     /* fill in the structure */
     memset(&serv_addr,0,sizeof(serv_addr));
     serv_addr.sin_family = AF_INET;
-    serv_addr.sin_port = htons(portno);
+    serv_addr.sin_port = htons(port);
     memcpy(&serv_addr.sin_addr.s_addr,server->h_addr_list[0],server->h_length);
 
     /* connect the socket */
@@ -93,11 +91,14 @@ int postData(char* date, float temp, float hum, char* broadcasterName)
 }
 
 int main(int argc, char *argv[]){
-    if(argc < 2){
-        printf("Broadcaster name parameter missing");
+    if(argc < 4){
+        printf("4 parameters required : host, port and broadcaster name");
         return 1;
     }
-    char* broadcasterName = argv[1];
+    char* host = argv[1];
+    int port = atoi(argv[2]);
+    char* broadcasterName = argv[3];
+
     printf("Broadcaster name : %s", broadcasterName);
     // Create I2C bus
 	int file;
@@ -162,8 +163,9 @@ int main(int argc, char *argv[]){
         time_t t = time(NULL);
         struct tm tm = *localtime(&t);
         char date[256];
+
         sprintf(date, "%d-%02d-%02dT%02d:%02d:%02d.000Z", tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec);
-        if(postData(date, cTemp, humidity, broadcasterName) != 0){
+        if(postData(host, port, date, cTemp, humidity, broadcasterName) != 0){
             printf("erreur sending post request");
             return 1;
         }
