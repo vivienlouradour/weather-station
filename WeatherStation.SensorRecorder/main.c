@@ -162,7 +162,7 @@ int main(int argc, char *argv[]){
         time_t t = time(NULL);
         struct tm tm = *localtime(&t);
         char date[256];
-        sprintf(date, "%d-%02d-%02dT%d:%02d:%02d.000Z", tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec);
+        sprintf(date, "%d-%02d-%02dT%02d:%02d:%02d.000Z", tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec);
         if(postData(date, cTemp, humidity, broadcasterName) != 0){
             printf("erreur sending post request");
             return 1;
