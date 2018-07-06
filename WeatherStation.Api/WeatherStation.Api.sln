@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherStation.Api.Core", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherStation.Api.Data", "WeatherStation.Api.Data\WeatherStation.Api.Data.csproj", "{49DEBDD9-2D16-4809-B023-F5391FD37AAB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherStation.Api.BackupDatabaseBatch", "WeatherStation.Api.BackupDatabaseBatch\WeatherStation.Api.BackupDatabaseBatch.csproj", "{D47539F0-C150-4A6A-AC35-B3631D74413E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{49DEBDD9-2D16-4809-B023-F5391FD37AAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49DEBDD9-2D16-4809-B023-F5391FD37AAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49DEBDD9-2D16-4809-B023-F5391FD37AAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D47539F0-C150-4A6A-AC35-B3631D74413E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D47539F0-C150-4A6A-AC35-B3631D74413E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D47539F0-C150-4A6A-AC35-B3631D74413E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D47539F0-C150-4A6A-AC35-B3631D74413E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
