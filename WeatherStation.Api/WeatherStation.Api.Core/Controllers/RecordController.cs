@@ -32,62 +32,60 @@ namespace WeatherStation.Api.Core.Controllers
 
         // GET 
         [HttpGet("{broadcasterName}")]
-        public IActionResult GetLast(string broadcasterName)
+        public async Task<IActionResult> GetLast(string broadcasterName)
         {
             using (var dal = new WeatherStationDal(_context))
             {
                 try
                 {
-                    var record = dal.GetLastRecord(broadcasterName);
-                    if (record == null)
-                        return NotFound();
-
+                    var record = await dal.GetLastRecordAsync(broadcasterName);
                     return Ok(record);
+                }
+                catch (BroadcasterNotFoundException ex)
+                {
+                    return NotFound(ex.Message);
                 }
                 catch (ApiArgumentException ex)
                 {
-                    return BadRequest();
-                }
-                catch (Exception ex)
-                {
-                    return new StatusCodeResult(500);
+                    return BadRequest(ex.Message);
                 }
             }
         }
 
         [HttpGet("{broadcasterName}/{begin}/{end}")]
-        public IActionResult GetRange(string broadcasterName, DateTime begin, DateTime end)
+        public async Task<IActionResult> GetRange(string broadcasterName, DateTime begin, DateTime end)
         {
             using (var dal = new WeatherStationDal(_context))
             {
                 try
                 {
-                    var records = dal.GetRecordsByDateRange(broadcasterName, begin, end).ToList();
-                    if (!records.Any())
-                        return NotFound();
-
+                    var records = await dal.GetRecordsByDateRangeAsync(broadcasterName, begin, end);
                     return Ok(records);
+                }
+                catch (BroadcasterNotFoundException ex)
+                {
+                    return NotFound(ex.Message);
                 }
                 catch (ApiArgumentException ex)
                 {
-                    return BadRequest();
+                    return BadRequest(ex.Message);
                 }
             }
 
         }
 
         [Route("seed")]
-        public void AddBouchon()
+        public async Task AddBouchon()
         {
             using (var dal = new WeatherStationDal(_context))
             {
                 float temp = 12.5f;
                 float hum = 45f;
                 DateTime dateTime = DateTime.Now;
-                dal.AddRecord(dateTime.AddMinutes(10), temp, hum, "broadcasterTesta");
-                dal.AddRecord(dateTime.AddMinutes(10), temp, hum, "broadcasterTest");
-                dal.AddRecord(dateTime.AddMinutes(10), temp, hum, "broadcasterTest");
-                dal.AddRecord(dateTime.AddMinutes(10), temp, hum, "broadcasterTest");
+                await dal.AddRecordAsync(dateTime.AddMinutes(10), temp, hum, "broadcasterTesta");
+                await dal.AddRecordAsync(dateTime.AddMinutes(10), temp, hum, "broadcasterTest");
+                await dal.AddRecordAsync(dateTime.AddMinutes(10), temp, hum, "broadcasterTest");
+                await dal.AddRecordAsync(dateTime.AddMinutes(10), temp, hum, "broadcasterTest");
             }
         }
 
@@ -105,7 +103,7 @@ namespace WeatherStation.Api.Core.Controllers
             {
                 try
                 {
-                    dal.AddRecord(record.DateTime, record.Temperature, record.Humidity, record.BroadcasterName);
+                    await dal.AddRecordAsync(record.DateTime, record.Temperature, record.Humidity, record.BroadcasterName);
                     _logger.Info("Record created.");
                     return Created(String.Empty, null);
                 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using WeatherStation.Api.Data.model;
 
 namespace WeatherStation.Api.Data.contract
@@ -9,18 +10,23 @@ namespace WeatherStation.Api.Data.contract
     /// </summary>
     public interface IDal : IDisposable
     {
+        #region Records
         /*
          * Add section
          */
-        void AddRecord(DateTime dateTime, float temperature, float humidity, string broacasterName);
+        Task AddRecordAsync(DateTime dateTime, float temperature, float humidity, string broacasterName);
         
         /*
          * Get section
          */
-        IEnumerable<Record> GetAllRecords(string broadcasterName);
-        IEnumerable<Record> GetRecordsByDateRange(string broadcasterName, DateTime begin, DateTime end); 
-        Record GetLastRecord(string broadcasterName);
-        IEnumerable<Broadcaster> GetAllBroadcasters();
+        Task<IEnumerable<Record>> GetAllRecords(string broadcasterName);
+        Task<IEnumerable<Record>> GetRecordsByDateRangeAsync(string broadcasterName, DateTime begin, DateTime end); 
+        Task<Record> GetLastRecordAsync(string broadcasterName);
+        #endregion
+
+        #region Broadcasters
+        Task<IEnumerable<Broadcaster>> GetAllBroadcastersAsync();
+        #endregion
 
 
     }

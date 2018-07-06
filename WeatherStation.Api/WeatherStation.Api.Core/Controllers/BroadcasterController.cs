@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using WeatherStation.Api.Data.implementation;
@@ -17,13 +18,13 @@ namespace WeatherStation.Api.Core.Controllers
             _logger = logger;
         }
 
-        public IActionResult GetAll()
+        public async Task<IActionResult> GetAll()
         {
             try
             {
                 using (var dal = new WeatherStationDal(_context))
                 {
-                    var broadcasters = dal.GetAllBroadcasters();
+                    var broadcasters = await dal.GetAllBroadcastersAsync();
                     return Ok(broadcasters);
                 }
             }
