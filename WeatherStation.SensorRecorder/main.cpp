@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string>
 #include "I2cReader.h"
+#include "Api.h"
 
 using namespace std;
 
@@ -10,6 +11,9 @@ using namespace std;
  * Formated to suit API request
  */
 void writeFormatedCurrentDate(char* date){
+    Api api("host", 25, "pine64");
+    api.print();
+
     time_t t = time(NULL);
     struct tm tm = *localtime(&t);
 

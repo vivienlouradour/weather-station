@@ -1,5 +1,5 @@
-#ifndef I2CREADER_H
-#define I2CREADER_H
+#ifndef I2CREADER_H_
+#define I2CREADER_H_
 
 #include <iostream>
 #include <string>
