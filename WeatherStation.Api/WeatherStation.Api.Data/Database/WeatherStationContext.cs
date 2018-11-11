@@ -14,8 +14,7 @@ namespace WeatherStation.Api.Data.implementation
         
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source=WheatherStationRecords.db");
+            optionsBuilder.UseSqlite("Data Source=WeatherStationRecords.db");
         }
-        
     }
 }

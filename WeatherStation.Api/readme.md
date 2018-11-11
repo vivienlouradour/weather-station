@@ -9,13 +9,13 @@ Then (ToFix) copy-paste the `WeatherStationRecords.db` file from `WeatherStation
 
 ## Publish steps  
 ```bash
-# in /WeatherStation.Api/ folder
-dotnet publish -c Release -o out    
-
 scp -r WeatherStation.Api.Core/out/ *@*.*.*.*:/docker-data/weather-station-api/  
 
 # Docker memo
-docker run -t --name weather-station-api -p 5000:80 -v /docker-data/weather-station-api/:/data/ microsoft/aspnetcore-build  
+# in /WeatherStation.Api/ folder
+docker build --pull -t weather-station-api-image .   
+docker run -d --name weather-station-api -p 5000:80 [-v /docker-data/weather-station-api/:/data/] weather-station-api-image
+
 docker exec -it weather-station-api /bin/bash  
 dotnet WeatherStation.Api.Core.dll
 ```
