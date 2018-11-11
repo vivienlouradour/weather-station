@@ -13,7 +13,7 @@ Api::Api(string host, int port, string broadcasterName){
     logInfo("Api initialized (Host=" + this->host + ", Port=" + ss.str() + ", BroadcasterName=" + this->broadcasterName);
 }
 
-void Api::sendRecord(float temperature, float humidity, char* date){
+void Api::sendRecord(float temperature, float humidity, string date){
     stringstream stream;
     stream << "{\"DateTime\":\"" << date << "\",\"Temperature\": "<< temperature << ",\"Humidity\": "<< humidity <<",\"BroadcasterName\":\"" << this->broadcasterName << "\"}";
     string jsonBody = stream.str();

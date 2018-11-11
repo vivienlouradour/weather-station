@@ -7,6 +7,6 @@
 
 void logError(std::string message);
 void logInfo(std::string message);
-void writeFormatedCurrentDate(char* date);
+std::string getCurrentDate();
 
 #endif

@@ -23,7 +23,7 @@ int main(int argc, char** argv){
 
     stringstream stream;  
     I2cReader i2cReader;
-    char date[30];
+    string date;
     try{
         float humidity;
         float temperature;
@@ -42,12 +42,12 @@ int main(int argc, char** argv){
             logInfo(stream.str());
 
             //Send record
-            writeFormatedCurrentDate(date);
+            date = getCurrentDate();
             api.sendRecord(temperature, humidity, date);
 
             stream.str("");
             //Wait before next record
-            stream << "Sleeping for " << recordDelay << "seconds before next record...";
+            stream << "Sleeping for " << recordDelay << " seconds before next record...";
             logInfo(stream.str());
             sleep(recordDelay);
         }
