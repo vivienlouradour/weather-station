@@ -27,11 +27,24 @@ namespace WeatherStation.Api.Core
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("VueCorsPolicy", policyBuilder =>
+                {
+                    policyBuilder
+                        .AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .AllowCredentials()
+                        .WithOrigins("http://localhost:8080");
+                });
+
+            });
+            services.AddOptions();
             services.AddMvc();
 
-            services.AddDbContext<WeatherStationContext>(options => 
+            services.AddDbContext<WeatherStationContext>(options =>
                 options.UseSqlite(Configuration.GetConnectionString("DefaultConnection"))
-                );
+            );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,7 +67,8 @@ namespace WeatherStation.Api.Core
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            
+            app.UseCors("VueCorsPolicy");
             app.UseMvc();
         }
     }

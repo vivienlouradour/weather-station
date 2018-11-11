@@ -9,6 +9,7 @@ using WeatherStation.Api.Data.model;
 
 namespace WeatherStation.Api.Data.implementation
 {
+    /// <inheritdoc />
     /// <summary>
     /// Implementation of IDal with SQLite and EntityFrameworkCore
     /// </summary>
