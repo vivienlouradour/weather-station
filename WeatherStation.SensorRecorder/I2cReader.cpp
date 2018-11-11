@@ -13,7 +13,6 @@ I2cReader::I2cReader(){
     if((this->file_i2c = open(bus.c_str(), O_RDWR)) < 0){
         cout << "Error : failed to open the I2C bus." << endl;
         throw exception();
-        // exit(EXIT_FAILURE);
     }
 
 	// Get I2C device, SI7021 I2C address is 0x40(64)
