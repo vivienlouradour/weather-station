@@ -29,13 +29,16 @@ float I2cReader::humidity(){
     cout << "Reading new humidity record..." << endl;
 
     // Send humidity measurement command(0xF5)
-    char config[1] = {0xF5};
-    write(this->file_i2c, config, 1);
+    unsigned char config[1] = {0xF5};
+    if(write(this->file_i2c, config, 1) != 1){
+        cout << "Error writing humidity command :failed to write to the i2c bus." << endl;
+        throw exception();
+    } 
     sleep(1);
 
     // Read 2 bytes of humidity data
     // humidity msb, humidity lsb
-    char data[2] = {0};
+    unsigned char data[2] = {0};
     float humidity;
     if(read(this->file_i2c, data, 2) != 2)
     {
@@ -53,8 +56,11 @@ float I2cReader::temperature(){
     cout << "Reading new temperature record..." << endl;
 
     // Send temperature measurement command(0xF3)
-    char config[1] = {0xF3};
-    write(this->file_i2c, config, 1); 
+    unsigned char config[1] = {0xF3};
+    if(write(this->file_i2c, config, 1) != 1){
+        cout << "Error writing temperature command :failed to write to the i2c bus." << endl;
+        throw exception();
+    } 
     sleep(1);
 
     // Read 2 bytes of temperature data
