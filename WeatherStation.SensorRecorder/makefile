@@ -4,18 +4,21 @@ EXEC=WeatherStation.SensorRecorder
 
 all:$(EXEC)
 
-$(EXEC): i2c.o main.o
-	$(CC) I2cReader.o Api.o main.o -o $(EXEC)
+$(EXEC): utils.o api.o i2c.o main.o
+	$(CC) utils.o I2cReader.o Api.o main.o -o $(EXEC)
 	rm -r *.o
 
-main.o : i2c.o api.o
+main.o : utils.o i2c.o api.o
 	$(CC) -c main.cpp
 
-api.o: Api.h
+api.o: utils.o Api.h
 	$(CC) -c Api.h Api.cpp
 
-i2c.o: I2cReader.h
+i2c.o: utils.o I2cReader.h 
 	$(CC) -c I2cReader.h I2cReader.cpp 
+
+utils.o : utils.h
+	$(CC) -c utils.h utils.cpp
 
 clean: 
 	rm -f *.o

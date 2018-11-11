@@ -3,11 +3,7 @@
 
 #include <iostream>
 #include <string>
-// #include <stdlib.h>
-// #include <linux/i2c-dev.h>
-// #include <sys/ioctl.h>
-// #include <fcntl.h>
-// #include <unistd.h>
+#include "utils.h"
 
 class Api{
     private:
