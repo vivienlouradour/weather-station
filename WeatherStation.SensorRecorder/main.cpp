@@ -1,12 +1,11 @@
-#include <iostream>
 #include <string>
+#include <sstream>
 #include "I2cReader.h"
 #include "Api.h"
 #include "utils.h"
-#include <sstream>
+
+
 using namespace std;
-
-
 
 int main(){
     Api api("host", 25, "pine64");
@@ -26,8 +25,11 @@ int main(){
         stream << "Humidity : " << hum;
         log(stream.str());
         
+        stream.str(""); // clear the stringstream (set to "")
         stream << "Temperature : " << temp;
         log(stream.str());
+
+
     }
     catch(const exception&){
         return EXIT_FAILURE;
