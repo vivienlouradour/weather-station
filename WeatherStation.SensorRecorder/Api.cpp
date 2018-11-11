@@ -7,6 +7,10 @@ Api::Api(string host, int port, string broadcasterName){
     this->host = host;
     this->port = port;
     this->broadcasterName = broadcasterName;
+
+    ostringstream ss;
+    ss << this->port;
+    logInfo("Api initialized (Host=" + this->host + ", Port=" + ss.str() + ", BroadcasterName=" + this->broadcasterName);
 }
 
 void Api::sendRecord(float temperature, float humidity, char* date){
@@ -36,7 +40,7 @@ void Api::postRequest(string body){
     
     string requestStr = requestStream.str();
 
-    log("Request : \n" + requestStr);
+    logInfo("Request : \n" + requestStr);
 
     struct hostent *server;
     struct sockaddr_in serv_addr;
@@ -47,14 +51,14 @@ void Api::postRequest(string body){
     /* create the socket */
     sockfd = socket(AF_INET, SOCK_STREAM, 0);
     if (sockfd < 0){ 
-        log("ERROR opening socket");
+        logError("opening socket");
         throw exception();
     }
 
     /* lookup the ip address */
     server = gethostbyname(this->host.c_str());
     if (server == NULL){
-        log("ERROR : impossible to resolve host (" + this->host + ")");
+        logError("impossible to resolve host (" + this->host + ")");
         throw exception();
     } 
 
@@ -66,7 +70,7 @@ void Api::postRequest(string body){
 
     /* connect the socket */
     if (connect(sockfd,(struct sockaddr *)&serv_addr,sizeof(serv_addr)) < 0){
-        log("ERROR connecting socket");
+        logError("connecting socket");
         throw exception();
     }
 
@@ -76,7 +80,7 @@ void Api::postRequest(string body){
     do {
         bytes = write(sockfd,requestStr.c_str()+sent,total-sent);
         if (bytes < 0){
-            log("ERROR writing request to socket");
+            logError("writing request to socket");
             throw exception();
         }
         if (bytes == 0)
@@ -90,16 +94,12 @@ void Api::postRequest(string body){
     bytes = read(sockfd,response+received,total-received);
     
     if(strpbrk(response, "201 Created") == NULL){
-        log("API Server error. \n Response : \n" + string(response));
+        logError("API Server error. \n Response : \n" + string(response));
         throw exception();
     }
 
     /* close the socket */
     close(sockfd);
 
-    log("Sent and created");
-}
-
-void Api::print(){
-    cout << "Host : " << this->host << " ; Port : " << this->port << " broadcasterName : " << this->broadcasterName << endl;
+    logInfo("Sent and created");
 }

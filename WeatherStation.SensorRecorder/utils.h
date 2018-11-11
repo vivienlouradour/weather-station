@@ -5,7 +5,8 @@
 #include <iostream>
 #include <stdio.h>
 
-void log(std::string message);
+void logError(std::string message);
+void logInfo(std::string message);
 void writeFormatedCurrentDate(char* date);
 
 #endif

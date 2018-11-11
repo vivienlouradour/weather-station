@@ -4,9 +4,14 @@ using namespace std;
 
 char currentDateTime[30];
 
-void log(std::string message){
+void logError(std::string message){
     writeFormatedCurrentDate(currentDateTime);
-    cout << "[" << currentDateTime << "] : " << message << endl;
+    cout << currentDateTime << " - [ERROR] : " << message << endl;
+}
+
+void logInfo(std::string message){
+    writeFormatedCurrentDate(currentDateTime);
+    cout << currentDateTime << " - [INFO] : " << message << endl;
 }
 
 /**

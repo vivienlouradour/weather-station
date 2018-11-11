@@ -21,7 +21,6 @@ class Api{
     public:
         Api(std::string host, int port, std::string broadcasterName);
         void sendRecord(float temperature, float humidity, char* date);
-        void print();
 };
 
 #endif
