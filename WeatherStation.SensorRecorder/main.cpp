@@ -14,7 +14,7 @@ int main(int argc, char** argv){
         return EXIT_FAILURE;
     }
     string host = string(argv[1]);
-    int port = stoi(argv[2]);
+    int port = atoi(argv[2]);
     string broadcasterName = string(argv[3]);
 
     Api api(host, port, broadcasterName);
