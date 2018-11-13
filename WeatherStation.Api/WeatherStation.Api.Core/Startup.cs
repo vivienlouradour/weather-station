@@ -27,6 +27,7 @@ namespace WeatherStation.Api.Core
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Allow CORS request from WeatherStation.Webclient (because url is different)
             services.AddCors(options =>
             {
                 options.AddPolicy("VueCorsPolicy", policyBuilder =>
@@ -35,7 +36,7 @@ namespace WeatherStation.Api.Core
                         .AllowAnyHeader()
                         .AllowAnyMethod()
                         .AllowCredentials()
-                        .WithOrigins("http://localhost:8080");
+                        .WithOrigins("http://localhost:8080"); //"https://meteo.ninsdev.tk");
                 });
 
             });

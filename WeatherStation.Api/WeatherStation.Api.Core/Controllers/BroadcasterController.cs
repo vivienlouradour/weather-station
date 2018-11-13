@@ -6,7 +6,7 @@ using WeatherStation.Api.Data.implementation;
 
 namespace WeatherStation.Api.Core.Controllers
 {        
-    [Route("weatherstation/api/[controller]")]
+    [Route("[controller]")]
     public class BroadcasterController : Controller
     {
         private readonly WeatherStationContext _context;

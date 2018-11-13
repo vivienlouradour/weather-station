@@ -18,7 +18,7 @@ using WeatherStation.Api.Data.model;
 
 namespace WeatherStation.Api.Core.Controllers
 {
-    [Route("weatherstation/api/[controller]")]
+    [Route("[controller]")]
     public class RecordController : Controller
     {
         private readonly WeatherStationContext _context;
