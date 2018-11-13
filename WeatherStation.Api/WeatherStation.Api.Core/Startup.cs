@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using WeatherStation.Api.Data.contract;
 using WeatherStation.Api.Data.implementation;
 
 namespace WeatherStation.Api.Core
@@ -27,6 +22,15 @@ namespace WeatherStation.Api.Core
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services
+                .AddAuthentication(options => { options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme; })
+                .AddJwtBearer(options =>
+                {
+                    options.Authority = "https://dev-333088.oktapreview.com/oauth2/default";
+                    options.Audience = "api://default";
+                    options.RequireHttpsMetadata = false;
+                });
+                
             //Allow CORS request from WeatherStation.Webclient (because url is different)
             services.AddCors(options =>
             {

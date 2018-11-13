@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking;
 using Microsoft.EntityFrameworkCore.ValueGeneration.Internal;
@@ -19,6 +20,7 @@ using WeatherStation.Api.Data.model;
 namespace WeatherStation.Api.Core.Controllers
 {
     [Route("[controller]")]
+    [Authorize]
     public class RecordController : Controller
     {
         private readonly WeatherStationContext _context;
@@ -88,7 +90,8 @@ namespace WeatherStation.Api.Core.Controllers
                 await dal.AddRecordAsync(dateTime.AddMinutes(10), temp, hum, "broadcasterTest");
             }
         }
-
+        
+        [AllowAnonymous] //TODO: update SensorRecorder to use secure API
         [HttpPost]
         public async Task<IActionResult> AddRecord([FromBody] PostRecord record)
         {
