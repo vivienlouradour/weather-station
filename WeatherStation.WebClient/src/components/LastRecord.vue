@@ -1,12 +1,13 @@
 <template>
     <div>
     <h1>Last record</h1>
-    <p> {{ message }} s</p>
+    <p> {{ message }}</p>
     </div>
 </template>
 
 <script>
-import axios from 'axios';
+import axios from 'axios'
+import config from '@/config.js'
 
 export default {
   name: 'LastRecord',
@@ -17,7 +18,7 @@ export default {
   },
   mounted(){
       axios
-      .get('http://localhost:5000/weatherstation/api/record/broadcasterTest')
+      .get(config.API_URL + '/record/broadcasterTest')
       .then(response => (this.message = response))
       .catch(function (error){
           console.log('error axios : ' + error)
