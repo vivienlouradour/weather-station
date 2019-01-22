@@ -6,7 +6,7 @@ all:$(EXEC)
 
 $(EXEC): utils.o api.o i2c.o main.o
 	$(CC) utils.o I2cReader.o Api.o main.o -o $(EXEC)
-	rm -r *.o
+	rm -r *.o ; rm -f *.gch
 
 main.o : utils.o i2c.o api.o
 	$(CC) -c main.cpp
@@ -21,4 +21,4 @@ utils.o : utils.h
 	$(CC) -c utils.h utils.cpp
 
 clean: 
-	rm -f *.o
+	rm -f *.o ; rm -f *.gch

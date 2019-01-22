@@ -1,3 +1,6 @@
+# global
+*.log
+
 # ASP.Net Core
 Debug/
 Release/

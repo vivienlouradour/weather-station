@@ -9,6 +9,11 @@ int recordDelay = 600; //Time (in seconds) beetween to records
 using namespace std;
 
 int main(int argc, char** argv){
+    //Redirect output to file
+    freopen( "WeatherStation.SensorRecorder.log", "a", stdout );
+    //Errors are treated like info (stdout)
+    //freopen( "error.txt", "w", stderr ); 
+    
     //Get main args
     if(argc < 4){
         logError("Invalid parameters : 3 required : (host, port, broadcaster name)");
