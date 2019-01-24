@@ -40,7 +40,7 @@ namespace WeatherStation.Api.Core
                         .AllowAnyHeader()
                         .AllowAnyMethod()
                         .AllowCredentials()
-                        .WithOrigins("http://localhost:4200"); //"https://meteo.ninsdev.tk");
+                        .WithOrigins(new string[]{ "http://localhost:4200", "https://meteo.ninsdev.tk"}); 
                 });
 
             });
