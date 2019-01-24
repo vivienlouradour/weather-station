@@ -21,4 +21,4 @@ RUN dotnet publish -c Release -o out
 FROM microsoft/dotnet:2.1-aspnetcore-runtime AS runtime
 WORKDIR /data
 COPY --from=build /data/WeatherStation.Api.Core/out ./
-ENTRYPOINT ["dotnet", "weatherstation.api.core.dll"]
+ENTRYPOINT ["dotnet", "WeatherStation.Api.Core.dll"]
