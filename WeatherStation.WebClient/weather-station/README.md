@@ -22,6 +22,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Docker info
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Build `docker build --pull -t weather-station-webclient-image .`
+Run `docker run -d --name weather-station-webclient -p 5050:80 weather-station-webclient-image`

@@ -7,7 +7,7 @@ RUN apk update && apk add --no-cache make git
 WORKDIR /app
 
 # Install app dependencies
-COPY package.json package-lock.json Makefile  /app/
+COPY package.json package-lock.json  /app/
 
 RUN cd /app && npm set progress=false && npm install
 
@@ -27,4 +27,5 @@ RUN rm -rf /usr/share/nginx/html/*
 ## From 'builder' copy website to default nginx public folder
 
 COPY --from=builder /app/dist /usr/share/nginx/html
+COPY ./nginx.conf /etc/nginx/nginx.conf
 CMD ["nginx", "-g", "daemon off;"]
