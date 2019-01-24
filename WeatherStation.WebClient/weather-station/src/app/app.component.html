@@ -1,11 +1,22 @@
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-      <h2>Mes appareils</h2>
-      <ul class="list-group">
-        <app-sensor-monitor></app-sensor-monitor>
-        <app-sensor-monitor></app-sensor-monitor>
-      </ul>
+<div id="wrapper" class="toggled">
+    <app-sidebar></app-sidebar>
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+                <div class="col-md-12 col-md-offset-6">
+                    <img src="../assets/meteo.png">
+                </div>   
+                <div class="row">
+                  <div class="col-xs-12">
+                      <app-last-record broadcaster="broadcasterTest"></app-last-record>
+                      <!-- <app-last-record broadcaster="pine64"></app-last-record> -->
+                        
+                  </div>
+                </div>
+        </div>
     </div>
-  </div>
+    <!-- /#page-content-wrapper -->
+
 </div>
+<!-- /#wrapper -->

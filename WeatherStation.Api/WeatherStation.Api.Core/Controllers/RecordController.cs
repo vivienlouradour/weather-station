@@ -20,7 +20,7 @@ using WeatherStation.Api.Data.model;
 namespace WeatherStation.Api.Core.Controllers
 {
     [Route("[controller]")]
-    [Authorize]
+    //[Authorize]
     public class RecordController : Controller
     {
         private readonly WeatherStationContext _context;
@@ -91,7 +91,7 @@ namespace WeatherStation.Api.Core.Controllers
             }
         }
         
-        [AllowAnonymous] //TODO: update SensorRecorder to use secure API
+        //[AllowAnonymous] //TODO: update SensorRecorder to use secure API
         [HttpPost]
         public async Task<IActionResult> AddRecord([FromBody] PostRecord record)
         {

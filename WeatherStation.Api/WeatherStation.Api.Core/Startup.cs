@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using WeatherStation.Api.Data.implementation;e
+using WeatherStation.Api.Data.implementation;
 
 namespace WeatherStation.Api.Core
 {
@@ -40,7 +40,7 @@ namespace WeatherStation.Api.Core
                         .AllowAnyHeader()
                         .AllowAnyMethod()
                         .AllowCredentials()
-                        .WithOrigins("http://localhost:8080"); //"https://meteo.ninsdev.tk");
+                        .WithOrigins("http://localhost:4200"); //"https://meteo.ninsdev.tk");
                 });
 
             });

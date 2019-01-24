@@ -7,7 +7,7 @@ using WeatherStation.Api.Data.implementation;
 
 namespace WeatherStation.Api.Core.Controllers
 {        
-    [Authorize]
+    //[Authorize]
     [Route("[controller]")]
     public class BroadcasterController : Controller
     {

@@ -1,0 +1,7 @@
+  <h1>Last record</h1>
+  <div class="alert alert-info" role="alert">
+      <h5>Broadcaster : {{ broadcaster }}</h5>
+      <p>Date : {{record.dateTime | date: 'dd/MM/yyyy HH:mm'}} </p>
+      <p>Temperature : {{ record.temperature }} °C</p>
+      <p>Humidity : {{ record.humidity }} %</p>
+  </div>

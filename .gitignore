@@ -11,6 +11,7 @@ WeatherStation.Api.Core.log
 *.out
 
 # Angular
+**/assets/config.json
 .DS_Store
 node_modules/
 dist/
