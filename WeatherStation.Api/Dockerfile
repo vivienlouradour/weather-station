@@ -1,4 +1,4 @@
-FROM microsoft/dotnet:2.1-sdk AS build
+FROM microsoft/dotnet:2.2-sdk AS build
 #WORKDIR /app
 WORKDIR /data
 
@@ -18,7 +18,7 @@ COPY WeatherStation.Api.BackupDatabaseBatch/. ./WeatherStation.Api.BackupDatabas
 RUN dotnet publish -c Release -o out
 
 
-FROM microsoft/dotnet:2.1-aspnetcore-runtime AS runtime
+FROM microsoft/dotnet:2.2-aspnetcore-runtime AS runtime
 WORKDIR /data
 COPY --from=build /data/WeatherStation.Api.Core/out ./
 ENTRYPOINT ["dotnet", "WeatherStation.Api.Core.dll"]
