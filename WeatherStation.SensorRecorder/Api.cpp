@@ -22,7 +22,7 @@ void Api::sendRecord(float temperature, float humidity, string date){
 }
 
 void Api::postRequest(string body){ 
-    string apiRoute = "/weatherstation/api/record/";
+    string apiRoute = "/record/";
 
     //POST request
     stringstream requestStream;
