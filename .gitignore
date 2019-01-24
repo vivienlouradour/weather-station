@@ -10,7 +10,7 @@ out/
 WeatherStation.Api.Core.log
 *.out
 
-# Vue.js
+# Angular
 .DS_Store
 node_modules/
 dist/

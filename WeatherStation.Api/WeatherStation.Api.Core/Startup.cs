@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using WeatherStation.Api.Data.implementation;
+using WeatherStation.Api.Data.implementation;e
 
 namespace WeatherStation.Api.Core
 {
