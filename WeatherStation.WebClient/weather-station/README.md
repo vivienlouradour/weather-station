@@ -24,5 +24,5 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Docker info
 
-Build `docker build --pull -t weather-station-webclient-image .`
+Build `docker build --pull -t weather-station-webclient-image .`  
 Run `docker run -d --name weather-station-webclient -p 5050:80 weather-station-webclient-image`
