@@ -5,14 +5,16 @@
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) {
     .title {
-        font-size: 20px;
+        font-size: 17px;
         color: white;
     }
 }
   
 @media screen and (max-width: 600px) {
     .title {
-        font-size: 12px;
+        font-size: 14px;
         color: white;
+        vertical-align: 50%;
+
     }   
 }
