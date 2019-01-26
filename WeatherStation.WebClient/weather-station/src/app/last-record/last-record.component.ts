@@ -35,6 +35,8 @@ export class LastRecordComponent implements OnInit {
       .subscribe(resp => {
         this.record = resp
       });
+  
+    // this.record = { dateTime: new Date(), temperature: 12.56889, humidity: 5.21356 }
   }
 
   
