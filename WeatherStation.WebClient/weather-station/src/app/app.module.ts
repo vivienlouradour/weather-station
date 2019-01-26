@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SensorMonitorComponent } from './sensor-monitor/sensor-monitor.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { LastRecordComponent } from './last-record/last-record.component';
+import { TopbarComponent } from './topbar/topbar.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { LastRecordComponent } from './last-record/last-record.component';
     SensorMonitorComponent,
     SidebarComponent,
     LastRecordComponent,
+    TopbarComponent,
   ],
   imports: [
     BrowserModule,

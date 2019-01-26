@@ -1,22 +1,15 @@
-<div id="wrapper" class="toggled">
-    <app-sidebar></app-sidebar>
+<app-topbar></app-topbar>
 
-    <!-- Page Content -->
-    <div id="page-content-wrapper">
-        <div class="container-fluid">
-                <div class="col-md-12 col-md-offset-6">
-                    <img src="../assets/meteo.png">
-                </div>   
-                <div class="row">
-                  <div class="col-xs-12">
-                      <app-last-record broadcaster="pine64"></app-last-record>
-                      <!-- <app-last-record broadcaster="broadcasterTest"></app-last-record> -->
-                        
-                  </div>
-                </div>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-12 offset-xl-4 offset-lg-4 offset-md-3 offset-sm-2">
+            <img src="../assets/meteo.png" class="center">
+        </div>  
+    </div>
+    <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-12 offset-xl-4 offset-lg-4 offset-md-3 offset-sm-2">
+            <app-last-record broadcaster="pine64"></app-last-record>
         </div>
     </div>
-    <!-- /#page-content-wrapper -->
-
 </div>
-<!-- /#wrapper -->
+
