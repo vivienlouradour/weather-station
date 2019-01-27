@@ -1,3 +1,6 @@
 {
-    "apiUrl": "https://api.example.fr"
+    "apiUrl": "https://api.example.fr",
+    "broadcaster": "broadcasterName",
+    "apiRefreshIntervalInSeconds": 10
+
 }

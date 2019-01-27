@@ -1,4 +1,10 @@
+<h1 class="">SENSOR MONITOR</h1>
 <div class="alert alert-info" role="alert">
-    <p>Temperature : ??.? °C</p>
-    <p>Humidity : ??.? °C</p>
+      <!-- <select class="form-control form-control-sm">
+          <option>Small select</option>
+      </select> -->
+    <h5>Broadcaster : {{ broadcaster }}</h5>
+    <p>Date : {{record.dateTime | date: 'dd/MM/yyyy HH:mm'}} </p>
+    <p>Temperature : {{ record.temperature | number: '1.1-1' }} °C</p>
+    <p>Humidity : {{ record.humidity | number: '1.1-1'}} %</p>
 </div>
