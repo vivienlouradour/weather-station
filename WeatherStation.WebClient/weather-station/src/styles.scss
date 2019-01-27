@@ -8,10 +8,19 @@ body {
   }
 }
 
-
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  text-align: center !important;
+margin: auto !important;
 } 
+
+.center-all *
+{
+  text-align: center !important;
+  margin: auto !important;
+}
+
+.bord {
+  border-style: solid; 
+  border-width: 2px;
+  color: black;
+}
