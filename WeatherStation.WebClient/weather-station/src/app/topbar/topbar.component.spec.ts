@@ -20,6 +20,6 @@ describe('TopbarComponent', () => {
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();ss
+    expect(component).toBeTruthy();
   });
 });
