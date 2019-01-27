@@ -25,6 +25,20 @@ namespace WeatherStation.Api.CoreMock
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Allow CORS request from WeatherStation.Webclient (because url is different)
+            services.AddCors(options =>
+            {
+                options.AddPolicy("VueCorsPolicy", policyBuilder =>
+                {
+                    policyBuilder
+                        .AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .AllowCredentials()
+                        .WithOrigins("http://localhost:4200"); 
+                });
+
+            });
+            services.AddOptions();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
@@ -41,7 +55,8 @@ namespace WeatherStation.Api.CoreMock
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+//            app.UseHttpsRedirection();
+            app.UseCors("VueCorsPolicy");
             app.UseMvc();
         }
     }
