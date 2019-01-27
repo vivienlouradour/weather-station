@@ -46,7 +46,6 @@ namespace WeatherStation.Api.Core
             });
             services.AddOptions();
             services.AddMvc();
-
             services.AddDbContext<WeatherStationContext>(options =>
                 options.UseSqlite(Configuration.GetConnectionString("DefaultConnection"))
             );
