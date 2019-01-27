@@ -3,7 +3,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { WeatherRecord } from '../app.component.js';
 import { Subject, Observable, interval } from 'rxjs';
-import config from '../../assets/config.json';
 
 @Injectable()
 export class ApiService{

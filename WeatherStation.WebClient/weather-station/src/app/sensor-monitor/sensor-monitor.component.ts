@@ -1,4 +1,3 @@
-import { Component, OnInit } from '@angular/core';
 import { Component, OnInit, Input } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from "@angular/common/http";
 import { WeatherRecord, WeatherBroadcaster } from '../app.component';
