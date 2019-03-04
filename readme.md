@@ -8,10 +8,6 @@ Tiny weather station system, build with a single-board computer (Pine A64+) and 
 
 - [Si7021](https://www.pine64.org/?product=pine64-humidity-temperature-sensor "Si7021") temperature and humidity sensor.
 
-## Security
-
-The API requests are secured with token, handled by [okta](https://www.okta.com/fr/) service.  
-
 ## Project structure
 
 ### WeatherStation.Api
