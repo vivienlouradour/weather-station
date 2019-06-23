@@ -9,7 +9,7 @@ WORKDIR /app
 COPY package*.json /app/
 
 # Install quasar-cli
-RUN cd /app && npm install @quasar/cli && npm install
+RUN cd /app && npm install -g @quasar/cli && npm install
 
 # Copy project files into the docker image
 COPY . /app
