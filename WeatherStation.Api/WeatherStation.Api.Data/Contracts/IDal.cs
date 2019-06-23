@@ -15,13 +15,15 @@ namespace WeatherStation.Api.Data.contract
          * Add section
          */
         Task AddRecordAsync(DateTime dateTime, float temperature, float humidity, string broacasterName);
-        
+
         /*
          * Get section
          */
         Task<IEnumerable<Record>> GetAllRecords(string broadcasterName);
-        Task<IEnumerable<Record>> GetRecordsByDateRangeAsync(string broadcasterName, DateTime begin, DateTime end); 
+        Task<IEnumerable<Record>> GetRecordsByDateRangeAsync(string broadcasterName, DateTime begin, DateTime end);
         Task<Record> GetLastRecordAsync(string broadcasterName);
+        Task<Record> GetHottestRecordAsync(string broadcasterName);
+        Task<Record> GetColdestRecordAsync(string broadcasterName);
         #endregion
 
         #region Broadcasters

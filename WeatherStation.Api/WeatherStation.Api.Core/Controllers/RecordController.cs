@@ -76,6 +76,48 @@ namespace WeatherStation.Api.Core.Controllers
 
         }
 
+        [HttpGet("{broadcasterName}/hottest")]
+        public async Task<IActionResult> GetHottestRecord(string broadcasterName)
+        {
+            using (var dal = new WeatherStationDal(_context))
+            {
+                try
+                {
+                    var hottestRecord = await dal.GetHottestRecordAsync(broadcasterName);
+                    return Ok(hottestRecord);
+                }
+                catch (BroadcasterNotFoundException ex)
+                {
+                    return NotFound(ex.Message);
+                }
+                catch (ApiArgumentException ex)
+                {
+                    return BadRequest(ex.Message);
+                }
+            }
+        }
+
+        [HttpGet("{broadcasterName}/coldest")]
+        public async Task<IActionResult> GetColdestRecord(string broadcasterName)
+        {
+            using (var dal = new WeatherStationDal(_context))
+            {
+                try
+                {
+                    var coldestRecord = await dal.GetColdestRecordAsync(broadcasterName);
+                    return Ok(coldestRecord);
+                }
+                catch (BroadcasterNotFoundException ex)
+                {
+                    return NotFound(ex.Message);
+                }
+                catch (ApiArgumentException ex)
+                {
+                    return BadRequest(ex.Message);
+                }
+            }
+        }
+
         [Route("seed")]
         public async Task AddBouchon()
         {
@@ -90,7 +132,7 @@ namespace WeatherStation.Api.Core.Controllers
                 await dal.AddRecordAsync(dateTime.AddMinutes(10), temp, hum, "broadcasterTest");
             }
         }
-        
+
         //[AllowAnonymous] //TODO: update SensorRecorder to use secure API
         [HttpPost]
         public async Task<IActionResult> AddRecord([FromBody] PostRecord record)
@@ -101,7 +143,7 @@ namespace WeatherStation.Api.Core.Controllers
                 _logger.Info("Record is null (not created).");
                 return BadRequest();
             }
-            
+
             using (var dal = new WeatherStationDal(_context))
             {
                 try

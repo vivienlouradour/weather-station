@@ -19,12 +19,12 @@ namespace WeatherStation.Api.Data.implementation
         /// EF context
         /// </summary>
         private readonly WeatherStationContext _context;
-        
+
         public WeatherStationDal(WeatherStationContext context)
         {
             _context = context;
         }
-        
+
         public void Dispose()
         {
             _context.Dispose();
@@ -32,9 +32,9 @@ namespace WeatherStation.Api.Data.implementation
 
         public async Task AddRecordAsync(DateTime dateTime, float temperature, float humidity, string broacasterName)
         {
-            if(
+            if (
                 broacasterName == null ||
-                dateTime.Equals(DateTime.MinValue) 
+                dateTime.Equals(DateTime.MinValue)
                 )
                 throw new ApiArgumentException("argument error");
             Broadcaster broadcaster = await _context.Broadcasters.FirstOrDefaultAsync(bc => bc.Name.Equals(broacasterName));
@@ -55,7 +55,7 @@ namespace WeatherStation.Api.Data.implementation
                 Humidity = humidity,
                 BroadcasterId = broadcaster.BroadcasterId
             };
-            
+
             await _context.Records.AddAsync(record);
             await _context.SaveChangesAsync();
         }
@@ -68,17 +68,17 @@ namespace WeatherStation.Api.Data.implementation
 
         public async Task<IEnumerable<Record>> GetRecordsByDateRangeAsync(string broadcasterName, DateTime begin, DateTime end)
         {
-            if(begin == DateTime.MinValue || end == DateTime.MinValue)
-                throw new  ApiArgumentException("Error parameter : begin and end have to be valid datetimes");
-            if(begin > end)
+            if (begin == DateTime.MinValue || end == DateTime.MinValue)
+                throw new ApiArgumentException("Error parameter : begin and end have to be valid datetimes");
+            if (begin > end)
                 throw new ApiArgumentException("Error parameter : The 1st date should be prior to or the same as the 2nd date");
 
             var records = GetRecordsByBroadcasterAsync(broadcasterName)
-                .Where(record => 
-                    record.DateTime >= begin && 
+                .Where(record =>
+                    record.DateTime >= begin &&
                     record.DateTime <= end
                     );
-            
+
             return await records.ToListAsync();
         }
 
@@ -96,12 +96,30 @@ namespace WeatherStation.Api.Data.implementation
         {
             var broadcaster =
                 _context.Broadcasters.FirstOrDefault(b => b.Name.Equals(broadcasterName));
-            if(broadcaster == null)
+            if (broadcaster == null)
                 throw new BroadcasterNotFoundException($"No broadcaster named {broadcasterName} found.");
 
             return _context.Records.Where(record => record.BroadcasterId == broadcaster.BroadcasterId);
         }
-        
-        
+
+        public Task<Record> GetHottestRecordAsync(string broadcasterName)
+        {
+            var broadcaster =
+                _context.Broadcasters.FirstOrDefault(b => b.Name.Equals(broadcasterName));
+            if (broadcaster == null)
+                throw new BroadcasterNotFoundException($"No broadcaster named {broadcasterName} found.");
+
+            return _context.Records.OrderByDescending(record => record.Temperature).FirstAsync();
+        }
+
+        public Task<Record> GetColdestRecordAsync(string broadcasterName)
+        {
+            var broadcaster =
+                _context.Broadcasters.FirstOrDefault(b => b.Name.Equals(broadcasterName));
+            if (broadcaster == null)
+                throw new BroadcasterNotFoundException($"No broadcaster named {broadcasterName} found.");
+
+            return _context.Records.OrderBy(record => record.Temperature).FirstAsync();
+        }
     }
 }
