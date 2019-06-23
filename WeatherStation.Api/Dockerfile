@@ -6,13 +6,11 @@ WORKDIR /data
 COPY *.sln .
 COPY WeatherStation.Api.Core/*.csproj ./WeatherStation.Api.Core/
 COPY WeatherStation.Api.Data/*.csproj ./WeatherStation.Api.Data/
-COPY WeatherStation.Api.BackupDatabaseBatch/*.csproj ./WeatherStation.Api.BackupDatabaseBatch/
 RUN dotnet restore
 
 # copy everything else and build app
 COPY WeatherStation.Api.Core/. ./WeatherStation.Api.Core/
 COPY WeatherStation.Api.Data/. ./WeatherStation.Api.Data/
-COPY WeatherStation.Api.BackupDatabaseBatch/. ./WeatherStation.Api.BackupDatabaseBatch/
 
 #WORKDIR /app/aspnetapp
 RUN dotnet publish -c Release -o out

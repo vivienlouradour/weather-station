@@ -6,8 +6,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherStation.Api.Data", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherStation.Api.BackupDatabaseBatch", "WeatherStation.Api.BackupDatabaseBatch\WeatherStation.Api.BackupDatabaseBatch.csproj", "{D47539F0-C150-4A6A-AC35-B3631D74413E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherStation.Api.CoreMock", "WeatherStation.Api.CoreMock\WeatherStation.Api.CoreMock.csproj", "{0E4D7415-51FC-478F-A39D-3AB67B58278A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
