@@ -6,7 +6,7 @@
           <q-icon name="menu"/>
         </q-btn>
 
-        <q-toolbar-title>Weather Station Monitoring</q-toolbar-title>
+        <q-toolbar-title>{{ appTitle }}</q-toolbar-title>
 
         <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
@@ -103,6 +103,7 @@ export default {
   name: "MyLayout",
   data() {
     return {
+      appTitle: process.env.APP_TITLE,
       leftDrawerOpen: this.$q.platform.is.desktop
     };
   },
