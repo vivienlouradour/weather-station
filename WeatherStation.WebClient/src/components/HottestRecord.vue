@@ -5,7 +5,7 @@
     v-bind:class="[isDarkMode ? 'bg-grey-9' : '', 'my-card']"
   >
     <q-card-section>
-      <div class="text-h6">Last Record</div>
+      <div class="text-h6">Hottest Record</div>
       <div class="text-subtitle2">{{ record && record.dateTime }}</div>
     </q-card-section>
 
@@ -32,9 +32,11 @@ export default {
 
   methods: {
     fetchLastRecord() {
-      return apiService.getLast(process.env.BROADCASTER_NAME).then(result => {
-        this.record = result;
-      });
+      return apiService
+        .getHottest(process.env.BROADCASTER_NAME)
+        .then(result => {
+          this.record = result;
+        });
     }
   }
 };

@@ -30,7 +30,7 @@ namespace WeatherStation.Api.Core
                     options.Audience = "api://default";
                     options.RequireHttpsMetadata = false;
                 });
-                
+
             //Allow CORS request from WeatherStation.Webclient (because url is different)
             services.AddCors(options =>
             {
@@ -40,7 +40,7 @@ namespace WeatherStation.Api.Core
                         .AllowAnyHeader()
                         .AllowAnyMethod()
                         .AllowCredentials()
-                        .WithOrigins(new string[]{ "http://localhost:4200", "https://meteo.ninsdev.tk"}); 
+                        .WithOrigins(new string[] { "http://localhost:8080", "https://meteo.ninsdev.tk" });
                 });
 
             });
@@ -59,19 +59,19 @@ namespace WeatherStation.Api.Core
             {
                 ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
             });
-            
+
             //Create database if not exists
             using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
             {
                 var context = serviceScope.ServiceProvider.GetRequiredService<WeatherStationContext>();
                 context.Database.Migrate();
             }
-            
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
-            
+
             app.UseCors("VueCorsPolicy");
             app.UseMvc();
         }
